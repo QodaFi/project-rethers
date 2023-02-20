@@ -91,7 +91,7 @@ pub async fn _get_result_string(
 
 
 fn _write_to_csv(content: &str) {
-  let filename = "query.csv";
+  let filename = "./queries/query.csv";
   let mut file = File::create(filename).unwrap();
   writeln!(&mut file, "{}", content).unwrap();
 }
